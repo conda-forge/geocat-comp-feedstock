@@ -1,5 +1,5 @@
 {% set name = "geocat-comp" %}
-{% set version = "2022.03.0" %}
+{% set version = "2022.04.0" %}
 
 package:
   name: {{ name }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/NCAR/{{ name }}/archive/v{{ version }}.tar.gz   # For building from a specific tag's tarball
-  sha256: ec73166e12f20867821365ef8467d970288132093f7a680c206ab2d661d61c4d
+  sha256: 6ef99e71ef72717769d7c75bb76255c1877ba308c6aa5f6d7587afedfc9cf75c
   # git_tag: v{{ version }}   # For building from a specific tag
   # git_rev: main # For building from main branch for debugging purposes
   # git_url: https://github.com/NCAR/{{ name }}.git

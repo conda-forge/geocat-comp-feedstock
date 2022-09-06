@@ -38,6 +38,7 @@ requirements:
     - numpy
     - scipy
     - xarray
+    - xskillscore
 
 test:
   requires:

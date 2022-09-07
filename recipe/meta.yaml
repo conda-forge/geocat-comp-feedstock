@@ -52,9 +52,9 @@ test:
     - geocat.comp
   commands:
     - pip check
+    - pytest test
     - conda info
     - conda list
-    - python -m pytest
   source_files:
     - test
 

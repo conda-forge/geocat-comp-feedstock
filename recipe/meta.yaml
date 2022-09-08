@@ -35,7 +35,7 @@ requirements:
     - eofs
     - geocat-f2py
     - metpy
-    - numpy 
+    - numpy
     - scipy
     - xarray
 
@@ -45,13 +45,11 @@ test:
     - pip
     - netcdf4
     - geocat-datafiles
-    - numba
     - xskillscore
   imports:
     - geocat
     - geocat.comp
   commands:
-    - pip check
     - pytest test
     - conda info
     - conda list

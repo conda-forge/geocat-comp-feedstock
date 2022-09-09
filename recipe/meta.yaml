@@ -50,6 +50,7 @@ test:
     - geocat
     - geocat.comp
   commands:
+    - pip check
     - pytest test
     - conda info
     - conda list

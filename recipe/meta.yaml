@@ -44,6 +44,7 @@ test:
     - pytest
     - pip
     - netcdf4
+    - numba
     - geocat-datafiles
     - xskillscore
   imports:

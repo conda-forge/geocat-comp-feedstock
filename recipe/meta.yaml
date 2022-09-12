@@ -14,7 +14,7 @@ source:
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install --no-deps --ignore-installed -vv .
 
 requirements:
@@ -35,9 +35,11 @@ requirements:
     - eofs
     - geocat-f2py
     - metpy
+    - numba
     - numpy
     - scipy
     - xarray
+    - xskillscore
 
 test:
   requires:

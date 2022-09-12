@@ -5,7 +5,7 @@ Home: https://geocat.ucar.edu/
 
 Package license: Apache-2.0
 
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/geocat-comp-feedstock/blob/main/LICENSE.txt)
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/geocat-comp-feedstock-fork-feedstock/blob/main/LICENSE.txt)
 
 Summary: GeoCAT-comp is a Python package containing a subset of NCL (NCAR Command Language) computational routines.
 
@@ -17,8 +17,8 @@ Current build status
 
 <table><tr><td>All platforms:</td>
     <td>
-      <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=15953&branchName=main">
-        <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/geocat-comp-feedstock?branchName=main">
+      <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=&branchName=main">
+        <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/geocat-comp-feedstock-fork-feedstock?branchName=main">
       </a>
     </td>
   </tr>

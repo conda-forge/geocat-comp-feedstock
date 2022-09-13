@@ -46,19 +46,9 @@ requirements:
 test:
   requires:
     - pytest
-    - pip
-    - geocat-datafiles
-    - netcdf4
   imports:
     - geocat
     - geocat.comp
-  commands:
-    - pip check
-    - pytest test
-    - conda info
-    - conda list
-  source_files:
-    - test
 
 about:
   home: https://geocat.ucar.edu/

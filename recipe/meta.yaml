@@ -39,6 +39,7 @@ requirements:
     - netcdf4
     - numba
     - numpy
+    - pint <0.20
     - scipy
     - xarray
     - xskillscore

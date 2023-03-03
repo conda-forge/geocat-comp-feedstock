@@ -1,11 +1,11 @@
-About geocat-comp
-=================
+About geocat-comp-feedstock
+===========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/geocat-comp-feedstock/blob/main/LICENSE.txt)
 
 Home: https://geocat.ucar.edu/
 
 Package license: Apache-2.0
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/geocat-comp-feedstock/blob/main/LICENSE.txt)
 
 Summary: GeoCAT-comp is a Python package containing a subset of NCL (NCAR Command Language) computational routines.
 

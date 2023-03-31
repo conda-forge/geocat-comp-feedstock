@@ -14,8 +14,8 @@ source:
 
 build:
   noarch: python
-  number: 0
-  script: {{ PYTHON }} -m pip install --no-deps --ignore-installed -vv .
+  number: 1
+  script: SETUPTOOLS_SCM_PRETEND_VERSION={{ version }} {{ PYTHON }} -m pip install . -v
 
 requirements:
   build:
@@ -28,6 +28,7 @@ requirements:
     - pip
     - setuptools
     - setuptools_scm
+    - toml
   run:
     - python >=3.8, <3.11
     - cf_xarray >=0.3.1

@@ -51,6 +51,9 @@ test:
   imports:
     - geocat
     - geocat.comp
+  commands:
+    # print package version
+    - python -c "import geocat.comp; print(geocat.comp.__version__)"
 
 about:
   home: https://geocat.ucar.edu/

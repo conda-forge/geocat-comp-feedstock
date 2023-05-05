@@ -1,5 +1,5 @@
 {% set name = "geocat-comp" %}
-{% set version = "2023.03.2" %}
+{% set version = "2023.05.0" %}
 
 package:
   name: {{ name }}
@@ -7,14 +7,14 @@ package:
 
 source:
   url: https://github.com/NCAR/{{ name }}/archive/v{{ version }}.tar.gz   # For building from a specific tag's tarball
-  sha256: 9533a505eeaec7552f605eb9ab823bad1fd47ac2a16c142baeb38b492e4bdc04
+  sha256: ac2e9bd7484428d3d51f09f8ebee7dfeb22b01d711f80c34ee17ffe8ad8a4ec6
   # git_tag: v{{ version }}   # For building from a specific tag
   # git_rev: main # For building from main branch for debugging purposes
   # git_url: https://github.com/NCAR/{{ name }}.git
 
 build:
   noarch: python
-  number: 1
+  number: 0
   script: SETUPTOOLS_SCM_PRETEND_VERSION={{ version }} {{ PYTHON }} -m pip install --no-deps --ignore-installed -vv .
 
 requirements:
@@ -66,5 +66,6 @@ extra:
   recipe-maintainers:
     - anissa111 # A. Zacharias https://github.com/anissa111
     - erogluorhan # O. Eroglu https://github.com/erogluorhan
-    - hCraker # H. Craker https://github.com/hCraker
+    - jukent # J. Kent https://github.com/jukent/
+    - kafitzgerald # K. FitzGerald https://github.com/kafitzgerald
     - pilotchute # A. Kootz https://github.com/pilotchute

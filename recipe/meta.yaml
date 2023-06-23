@@ -1,5 +1,5 @@
 {% set name = "geocat-comp" %}
-{% set version = "2023.05.0" %}
+{% set version = "2023.06.0" %}
 
 package:
   name: {{ name }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/NCAR/{{ name }}/archive/v{{ version }}.tar.gz   # For building from a specific tag's tarball
-  sha256: ac2e9bd7484428d3d51f09f8ebee7dfeb22b01d711f80c34ee17ffe8ad8a4ec6
+  sha256: 8f6053c8dfa4a8140629b23a2def4a67565a0f6e769d7031610be68d518a260b
   # git_tag: v{{ version }}   # For building from a specific tag
   # git_rev: main # For building from main branch for debugging purposes
   # git_url: https://github.com/NCAR/{{ name }}.git
@@ -35,7 +35,6 @@ requirements:
     - dask
     - distributed
     - eofs
-    - geocat-f2py
     - metpy
     - netcdf4
     - numba
@@ -68,4 +67,3 @@ extra:
     - erogluorhan # O. Eroglu https://github.com/erogluorhan
     - jukent # J. Kent https://github.com/jukent/
     - kafitzgerald # K. FitzGerald https://github.com/kafitzgerald
-    - pilotchute # A. Kootz https://github.com/pilotchute

@@ -35,7 +35,6 @@ requirements:
     - dask
     - distributed
     - eofs
-    - geocat-f2py
     - metpy
     - netcdf4
     - numba

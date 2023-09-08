@@ -63,6 +63,7 @@ about:
 
 extra:
   recipe-maintainers:
+    - cyschneck
     - anissa111 # A. Zacharias https://github.com/anissa111
     - erogluorhan # O. Eroglu https://github.com/erogluorhan
     - jukent # J. Kent https://github.com/jukent/

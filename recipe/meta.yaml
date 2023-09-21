@@ -14,7 +14,7 @@ source:
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: SETUPTOOLS_SCM_PRETEND_VERSION={{ version }} {{ PYTHON }} -m pip install --no-deps --ignore-installed -vv .
 
 requirements:
@@ -41,7 +41,7 @@ requirements:
     - numpy
     - pint <0.20
     - scipy
-    - xarray
+    - xarray <=2023.02.0
     - xskillscore
 
 test:

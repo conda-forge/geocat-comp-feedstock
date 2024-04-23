@@ -38,7 +38,7 @@ requirements:
     - metpy
     - netcdf4
     - numba
-    - numpy<2.0
+    - numpy <2.0
     - pint
     - scipy
     - xarray

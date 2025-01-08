@@ -1,3 +1,4 @@
+{% set python_min = '3.10' %}
 {% set name = "geocat-comp" %}
 {% set version = "2024.04.0" %}
 
@@ -14,7 +15,7 @@ source:
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: SETUPTOOLS_SCM_PRETEND_VERSION={{ version }} {{ PYTHON }} -m pip install --no-deps --ignore-installed -vv .
 
 requirements:
@@ -24,12 +25,12 @@ requirements:
     - setuptools                          # [build_platform != target_platform]
     - cross-python_{{ target_platform }}  # [build_platform != target_platform]
   host:
-    - python >=3.10, <3.13
+    - python {{ python_min }}
     - pip
     - setuptools
     - setuptools_scm
   run:
-    - python >=3.10, <3.13
+    - python >={{ python_min }},<3.13
     - cf_xarray >=0.3.1
     - cftime
     - dask
@@ -47,6 +48,7 @@ requirements:
 test:
   requires:
     - pytest
+    - python {{ python_min }}
   imports:
     - geocat
     - geocat.comp

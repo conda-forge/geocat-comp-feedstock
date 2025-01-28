@@ -41,7 +41,7 @@ requirements:
     - numba
     - numpy <2.0
     - pint
-    - scipy
+    - scipy <1.15
     - xarray
     - xskillscore
 

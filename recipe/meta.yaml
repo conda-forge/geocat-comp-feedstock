@@ -1,6 +1,6 @@
 {% set python_min = "3.10" %}
 {% set name = "geocat-comp" %}
-{% set version = "2025.01.0" %}
+{% set version = "2025.02.0" %}
 
 package:
   name: {{ name }}
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://github.com/NCAR/{{ name }}/archive/v{{ version }}.tar.gz   # For building from a specific tag's tarball
-  sha256: 6d9d39c6f643addb6ac9c27888ed2ef404994dd72e31bde6aea3db7f76c3ff5c
+  sha256: 43bdbe6f6c48a14ae5570010a368c8ae1c2f5eab46c8a4e5cf2f8b0669ed6a3a
   # git_tag: v{{ version }}   # For building from a specific tag
   # git_rev: main # For building from main branch for debugging purposes
   # git_url: https://github.com/NCAR/{{ name }}.git
@@ -30,7 +30,7 @@ requirements:
     - setuptools
     - setuptools_scm
   run:
-    - python >={{ python_min }},<3.13
+    - python >={{ python_min }},<3.14
     - cf_xarray >=0.3.1
     - cftime
     - dask
@@ -39,7 +39,7 @@ requirements:
     - metpy
     - netcdf4
     - numba
-    - numpy <2.0
+    - numpy
     - pint
     - scipy <1.15
     - xarray

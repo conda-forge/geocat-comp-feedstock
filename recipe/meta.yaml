@@ -39,7 +39,7 @@ requirements:
     - metpy
     - netcdf4
     - numba
-    - numpy <2.0
+    - numpy
     - pint
     - scipy <1.15
     - xarray

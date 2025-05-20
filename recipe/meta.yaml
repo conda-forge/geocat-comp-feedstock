@@ -1,6 +1,6 @@
 {% set python_min = "3.10" %}
 {% set name = "geocat-comp" %}
-{% set version = "2025.03.0" %}
+{% set version = "2025.05.0" %}
 
 package:
   name: {{ name }}
@@ -8,14 +8,14 @@ package:
 
 source:
   url: https://github.com/NCAR/{{ name }}/archive/v{{ version }}.tar.gz   # For building from a specific tag's tarball
-  sha256: 4db0a0f76e970a222ccaf645c859936e9cb9f59a6269b0c39708b608f350e1f3
+  sha256: 00d756f3bec733d5b7e28561360c998a4695d0c312be03308910d1b7b94f8b9b
   # git_tag: v{{ version }}   # For building from a specific tag
   # git_rev: main # For building from main branch for debugging purposes
   # git_url: https://github.com/NCAR/{{ name }}.git
 
 build:
   noarch: python
-  number: 1
+  number: 0
   script: SETUPTOOLS_SCM_PRETEND_VERSION={{ version }} {{ PYTHON }} -m pip install --no-deps --ignore-installed -vv .
 
 requirements:

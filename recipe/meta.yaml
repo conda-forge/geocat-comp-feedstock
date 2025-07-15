@@ -32,7 +32,6 @@ requirements:
     - distributed
     - eofs
     - metpy
-    - numba
     - numpy
     - packaging
     - scipy
